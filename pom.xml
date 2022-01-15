@@ -7,6 +7,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <site.encoding>UTF-8</site.encoding>
+    <jacoco.version>0.7.5</jacoco.version>
   </properties>
 
   <dependencies>
@@ -47,8 +48,18 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.7.5</version>
+        <version>${jacoco.version}</version>
       </plugin>
     </plugins>
   </build>
+
+  <reporting>
+    <plugins>
+        <plugin>
+           <groupId>org.jacoco</groupId>
+           <artifactId>jacoco-maven-plugin</artifactId>
+           <version>${jacoco.version}</version>
+        </plugin>
+    </plugins>
+  </reporting>
 </project>
