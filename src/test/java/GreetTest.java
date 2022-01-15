@@ -1,4 +1,4 @@
-package test;
+package test.java;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
